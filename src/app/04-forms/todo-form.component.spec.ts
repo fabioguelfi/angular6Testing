@@ -1,14 +1,14 @@
 import { FormBuilder } from '@angular/forms';
-import { TodoFormComponent } from './todo-form.component'; 
+import { TodoFormComponent } from './todo-form.component';
 
 describe('TodoFormComponent', () => {
-  var component: TodoFormComponent; 
+  let component: TodoFormComponent;
 
   beforeEach(() => {
     component = new TodoFormComponent(new FormBuilder());
   });
 
-  it('should create a form with 2 controls', () => {
+  it('should crea a form with 2 controls', () => {
     expect(component.form.contains('name')).toBeTruthy();
     expect(component.form.contains('email')).toBeTruthy();
   });
